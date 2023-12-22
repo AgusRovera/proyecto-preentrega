@@ -47,10 +47,6 @@ header nav ul li a {
     color: rgb(255, 255, 255);
 }
 
-a {
-    text-decoration: none;
-    color: #ffffff;
-}
 
 
 /*!--------MAIN---------*/
@@ -224,7 +220,7 @@ footer div {
     -moz-box-shadow: 10px 10px 25px 10px rgba(0, 0, 0, 0.6);
 }
 
-.SUV div img {
+.SUV .compra-suv div img {
     width: 100%;
 }
 
