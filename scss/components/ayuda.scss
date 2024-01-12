@@ -1,11 +1,11 @@
 /*! AYUDA */
 
 :root{
-    --white: #FFF;
-    --background: #002988;
-    --background-hover: #383D4F;
-    --primary-blue: #00E0FE;
-    --blue-gray: #f4fcff;
+    --white: $color-secundario;
+    --background: $color-quartenario;
+    --background-hover: $color-quinario;
+    --primary-blue: $color-sexagenario;
+    --blue-gray: $color-septenario;
 }
 
 html{

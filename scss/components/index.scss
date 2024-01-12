@@ -4,7 +4,7 @@
     width: 100%;
     height: 500px;
     text-align: center;
-    color: #fdfdfd;
+    color: $color-secundario;
     background-image: url("../img/bienvenida.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -26,30 +26,27 @@
 }
 
 .compras{
-    background-color: #357681;
+    background-color: $color-octogenario;
     h2{
         text-align: center;
-    background-color: #00184F;
-    color: white;
+    background-color: $color-principal;
+    color: $color-secundario;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     }
     .tarjeta-de-productos{
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        flex-wrap: wrap;
+        @extend %flex-wrap;
         div{
             text-align: center;
             width: 380px;
-            border: #00184F solid 1px;
+            border: $color-principal solid 1px;
             margin: 20px;
             display: inline-block;
             font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
             background-image: url("../img/banner_tipo_11.png");
-            color: rgb(255, 255, 255);
-            box-shadow: 10px 10px 25px 10px rgba(0, 0, 0, 0.6);
-            -webkit-box-shadow: 10px 10px 25px 10px rgba(0, 0, 0, 0.6);
-            -moz-box-shadow: 10px 10px 25px 10px rgba(0, 0, 0, 0.6);
+            color: $color-secundario;
+            box-shadow: 10px 10px 25px 10px $color-nonageniario;
+            -webkit-box-shadow: 10px 10px 25px 10px $color-nonageniario;
+            -moz-box-shadow: 10px 10px 25px 10px $color-nonageniario;
             img{
                 width: 100%;
             }
@@ -57,8 +54,8 @@
                 text-decoration: none;
                 display: inline-block;
                 margin: 10px;
-                background-color: #00184F;
-                color: white;
+                background-color: $color-principal;
+                color: $color-secundario;
                 padding: 15px;
             }
         }
@@ -68,23 +65,20 @@
 .comprar-service{
     h2{
         text-align: center;
-        background-color: #00184F;
-        color: white;
+        background-color: $color-principal;
+        color: $color-secundario;
         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     }
     .tarjetas-del-service{
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        flex-wrap: wrap;
+        @extend %flex-wrap;
         .cuerpo-de-tarjeta{
             text-align: center;
-            border: #00184F solid 1px;
+            border: $color-principal solid 1px;
             font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            color: rgb(255, 255, 255);
-            box-shadow: 10px 10px 25px 10px rgba(0, 0, 0, 0.6);
-            -webkit-box-shadow: 10px 10px 25px 10px rgba(0, 0, 0, 0.6);
-            -moz-box-shadow: 10px 10px 25px 10px rgba(0, 0, 0, 0.6);
+            color: $color-secundario;
+            box-shadow: 10px 10px 25px 10px $color-nonageniario;
+            -webkit-box-shadow: 10px 10px 25px 10px $color-nonageniario;
+            -moz-box-shadow: 10px 10px 25px 10px $color-nonageniario;
         }
     }
 }
@@ -102,17 +96,17 @@
         h3{
             position: absolute;
             bottom: 0;
-            color: white;
-            background-color: rgba(0, 0, 0, 0.623);
+            color: $color-secundario;
+            background-color: $color-nonageniario;
             width: 100%;
             padding: 10px;
         }
         img{
             width: 100%;
             height: 100%;
-            box-shadow: 10px 10px 25px 10px rgba(0, 0, 0, 0.6);
-            -webkit-box-shadow: 10px 10px 25px 10px rgba(0, 0, 0, 0.6);
-            -moz-box-shadow: 10px 10px 25px 10px rgba(0, 0, 0, 0.6);
+            box-shadow: 10px 10px 25px 10px $color-nonageniario;
+            -webkit-box-shadow: 10px 10px 25px 10px $color-nonageniario;
+            -moz-box-shadow: 10px 10px 25px 10px $color-nonageniario;
         }
     }
 }

@@ -1,3 +1,14 @@
+/*! FUNCIONALIDADES */
+/*--VARIABLES de colores aplicadas en todos los documentos--*/
+/*--EXTENDS flex-wrap--
+aplicada en el INDEX, MODELOS, OPERACIONES, SERVICIOS*/
+.compras .tarjeta-de-productos, .comprar-service .tarjetas-del-service, .SUV .compra-suv, .PICK-UP .compra-pick-up, .Datos .Tarjeta-de-Datos, .row .autos-listado {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap; }
+
+/*--MIXIN aplicado en INDEX*/
 /*! RESET */
 * {
   margin: 0%;
@@ -29,14 +40,14 @@ header {
         margin: 10px; }
         header nav ul li a {
           text-decoration: none;
-          color: white; }
+          color: #ffffff; }
 
 /*! INDEX */
 .Bienvenidos {
   width: 100%;
   height: 500px;
   text-align: center;
-  color: #fdfdfd;
+  color: #ffffff;
   background-image: url("../img/bienvenida.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -59,54 +70,44 @@ header {
   .compras h2 {
     text-align: center;
     background-color: #00184F;
-    color: white;
+    color: #ffffff;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; }
-  .compras .tarjeta-de-productos {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap; }
-    .compras .tarjeta-de-productos div {
-      text-align: center;
-      width: 380px;
-      border: #00184F solid 1px;
-      margin: 20px;
+  .compras .tarjeta-de-productos div {
+    text-align: center;
+    width: 380px;
+    border: #00184F solid 1px;
+    margin: 20px;
+    display: inline-block;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-image: url("../img/banner_tipo_11.png");
+    color: #ffffff;
+    box-shadow: 10px 10px 25px 10px #00000099;
+    -webkit-box-shadow: 10px 10px 25px 10px #00000099;
+    -moz-box-shadow: 10px 10px 25px 10px #00000099; }
+    .compras .tarjeta-de-productos div img {
+      width: 100%; }
+    .compras .tarjeta-de-productos div .boton-conoce-mas {
+      text-decoration: none;
       display: inline-block;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-      background-image: url("../img/banner_tipo_11.png");
-      color: white;
-      box-shadow: 10px 10px 25px 10px rgba(0, 0, 0, 0.6);
-      -webkit-box-shadow: 10px 10px 25px 10px rgba(0, 0, 0, 0.6);
-      -moz-box-shadow: 10px 10px 25px 10px rgba(0, 0, 0, 0.6); }
-      .compras .tarjeta-de-productos div img {
-        width: 100%; }
-      .compras .tarjeta-de-productos div .boton-conoce-mas {
-        text-decoration: none;
-        display: inline-block;
-        margin: 10px;
-        background-color: #00184F;
-        color: white;
-        padding: 15px; }
+      margin: 10px;
+      background-color: #00184F;
+      color: #ffffff;
+      padding: 15px; }
 
 .comprar-service h2 {
   text-align: center;
   background-color: #00184F;
-  color: white;
+  color: #ffffff;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; }
 
-.comprar-service .tarjetas-del-service {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap; }
-  .comprar-service .tarjetas-del-service .cuerpo-de-tarjeta {
-    text-align: center;
-    border: #00184F solid 1px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: white;
-    box-shadow: 10px 10px 25px 10px rgba(0, 0, 0, 0.6);
-    -webkit-box-shadow: 10px 10px 25px 10px rgba(0, 0, 0, 0.6);
-    -moz-box-shadow: 10px 10px 25px 10px rgba(0, 0, 0, 0.6); }
+.comprar-service .tarjetas-del-service .cuerpo-de-tarjeta {
+  text-align: center;
+  border: #00184F solid 1px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: #ffffff;
+  box-shadow: 10px 10px 25px 10px #00000099;
+  -webkit-box-shadow: 10px 10px 25px 10px #00000099;
+  -moz-box-shadow: 10px 10px 25px 10px #00000099; }
 
 .grid-galeria {
   width: 100%;
@@ -121,16 +122,16 @@ header {
     .grid-galeria div h3 {
       position: absolute;
       bottom: 0;
-      color: white;
-      background-color: rgba(0, 0, 0, 0.623);
+      color: #ffffff;
+      background-color: #00000099;
       width: 100%;
       padding: 10px; }
     .grid-galeria div img {
       width: 100%;
       height: 100%;
-      box-shadow: 10px 10px 25px 10px rgba(0, 0, 0, 0.6);
-      -webkit-box-shadow: 10px 10px 25px 10px rgba(0, 0, 0, 0.6);
-      -moz-box-shadow: 10px 10px 25px 10px rgba(0, 0, 0, 0.6); }
+      box-shadow: 10px 10px 25px 10px #00000099;
+      -webkit-box-shadow: 10px 10px 25px 10px #00000099;
+      -moz-box-shadow: 10px 10px 25px 10px #00000099; }
 
 /*! FOOTER */
 footer div {
@@ -152,41 +153,9 @@ footer div {
   .compras h2 {
     text-align: center;
     background-color: #00184F;
-    color: white;
+    color: #ffffff;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; }
-  .compras .tarjeta-de-productos {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap; }
-    .compras .tarjeta-de-productos div {
-      text-align: center;
-      width: 380px;
-      border: #00184F solid 1px;
-      margin: 20px;
-      display: inline-block;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-      background-image: url("../img/banner_tipo_11.png");
-      color: white;
-      box-shadow: 10px 10px 25px 10px rgba(0, 0, 0, 0.6);
-      -webkit-box-shadow: 10px 10px 25px 10px rgba(0, 0, 0, 0.6);
-      -moz-box-shadow: 10px 10px 25px 10px rgba(0, 0, 0, 0.6); }
-      .compras .tarjeta-de-productos div img {
-        width: 100%; }
-      .compras .tarjeta-de-productos div .boton-conoce-mas {
-        text-decoration: none;
-        display: inline-block;
-        margin: 10px;
-        background-color: #00184F;
-        color: white;
-        padding: 15px; }
-
-.SUV .compra-suv {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap; }
-  .SUV .compra-suv div {
+  .compras .tarjeta-de-productos div {
     text-align: center;
     width: 380px;
     border: #00184F solid 1px;
@@ -194,74 +163,86 @@ footer div {
     display: inline-block;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     background-image: url("../img/banner_tipo_11.png");
-    color: white;
-    box-shadow: 10px 10px 25px 10px rgba(0, 0, 0, 0.6);
-    -webkit-box-shadow: 10px 10px 25px 10px rgba(0, 0, 0, 0.6);
-    -moz-box-shadow: 10px 10px 25px 10px rgba(0, 0, 0, 0.6); }
-    .SUV .compra-suv div img {
+    color: #ffffff;
+    box-shadow: 10px 10px 25px 10px #00000099;
+    -webkit-box-shadow: 10px 10px 25px 10px #00000099;
+    -moz-box-shadow: 10px 10px 25px 10px #00000099; }
+    .compras .tarjeta-de-productos div img {
       width: 100%; }
-    .SUV .compra-suv div .boton-conoce-mas {
+    .compras .tarjeta-de-productos div .boton-conoce-mas {
       text-decoration: none;
       display: inline-block;
       margin: 10px;
       background-color: #00184F;
-      color: white;
+      color: #ffffff;
       padding: 15px; }
+
+.SUV .compra-suv div {
+  text-align: center;
+  width: 380px;
+  border: #00184F solid 1px;
+  margin: 20px;
+  display: inline-block;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-image: url("../img/banner_tipo_11.png");
+  color: #ffffff;
+  box-shadow: 10px 10px 25px 10px #00000099;
+  -webkit-box-shadow: 10px 10px 25px 10px #00000099;
+  -moz-box-shadow: 10px 10px 25px 10px #00000099; }
+  .SUV .compra-suv div img {
+    width: 100%; }
+  .SUV .compra-suv div .boton-conoce-mas {
+    text-decoration: none;
+    display: inline-block;
+    margin: 10px;
+    background-color: #00184F;
+    color: #ffffff;
+    padding: 15px; }
 
 .PICK-UP h2 {
   text-align: center;
   background-color: #00184F;
-  color: white;
+  color: #ffffff;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; }
 
-.PICK-UP .compra-pick-up {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap; }
-  .PICK-UP .compra-pick-up div {
-    text-align: center;
-    width: 380px;
-    border: #00184F solid 1px;
-    margin: 20px;
+.PICK-UP .compra-pick-up div {
+  text-align: center;
+  width: 380px;
+  border: #00184F solid 1px;
+  margin: 20px;
+  display: inline-block;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-image: url("../img/banner_tipo_11.png");
+  color: #ffffff;
+  box-shadow: 10px 10px 25px 10px #00000099;
+  -webkit-box-shadow: 10px 10px 25px 10px #00000099;
+  -moz-box-shadow: 10px 10px 25px 10px #00000099; }
+  .PICK-UP .compra-pick-up div img {
+    width: 100%; }
+  .PICK-UP .compra-pick-up div .boton-conoce-mas {
+    text-decoration: none;
     display: inline-block;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background-image: url("../img/banner_tipo_11.png");
-    color: white;
-    box-shadow: 10px 10px 25px 10px rgba(0, 0, 0, 0.6);
-    -webkit-box-shadow: 10px 10px 25px 10px rgba(0, 0, 0, 0.6);
-    -moz-box-shadow: 10px 10px 25px 10px rgba(0, 0, 0, 0.6); }
-    .PICK-UP .compra-pick-up div img {
-      width: 100%; }
-    .PICK-UP .compra-pick-up div .boton-conoce-mas {
-      text-decoration: none;
-      display: inline-block;
-      margin: 10px;
-      background-color: #00184F;
-      color: white;
-      padding: 15px; }
+    margin: 10px;
+    background-color: #00184F;
+    color: #ffffff;
+    padding: 15px; }
 
 /*! SERVICIOS */
 h2 {
   text-align: center;
   background-color: #00184F;
-  color: white;
+  color: #ffffff;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; }
 
-.Datos .Tarjeta-de-Datos {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap; }
-  .Datos .Tarjeta-de-Datos div {
-    text-align: center;
-    width: 380px;
-    display: inline-block;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    text-decoration: none;
-    margin: 0px;
-    color: black;
-    padding: 0px; }
+.Datos .Tarjeta-de-Datos div {
+  text-align: center;
+  width: 380px;
+  display: inline-block;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-decoration: none;
+  margin: 0px;
+  color: #000000;
+  padding: 0px; }
 
 .mapa {
   text-align: center; }
@@ -272,42 +253,37 @@ h2 {
   .row h2 {
     text-align: center;
     background-color: #00184F;
-    color: white;
+    color: #ffffff;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; }
-  .row .autos-listado {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap; }
-    .row .autos-listado div {
-      text-align: center;
-      width: 380px;
-      border: #00184F solid 1px;
-      margin: 20px;
+  .row .autos-listado div {
+    text-align: center;
+    width: 380px;
+    border: #00184F solid 1px;
+    margin: 20px;
+    display: inline-block;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-image: url("../img/banner_tipo_11.png");
+    color: #ffffff;
+    box-shadow: 10px 10px 25px 10px #00000099;
+    -webkit-box-shadow: 10px 10px 25px 10px #00000099;
+    -moz-box-shadow: 10px 10px 25px 10px #00000099; }
+    .row .autos-listado div img {
+      width: 100%; }
+    .row .autos-listado div .boton-conoce-mas {
+      text-decoration: none;
       display: inline-block;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-      background-image: url("../img/banner_tipo_11.png");
-      color: white;
-      box-shadow: 10px 10px 25px 10px rgba(0, 0, 0, 0.6);
-      -webkit-box-shadow: 10px 10px 25px 10px rgba(0, 0, 0, 0.6);
-      -moz-box-shadow: 10px 10px 25px 10px rgba(0, 0, 0, 0.6); }
-      .row .autos-listado div img {
-        width: 100%; }
-      .row .autos-listado div .boton-conoce-mas {
-        text-decoration: none;
-        display: inline-block;
-        margin: 10px;
-        background-color: #00184F;
-        color: white;
-        padding: 15px; }
+      margin: 10px;
+      background-color: #00184F;
+      color: #ffffff;
+      padding: 15px; }
 
 /*! AYUDA */
 :root {
-  --white: #FFF;
-  --background: #002988;
-  --background-hover: #383D4F;
-  --primary-blue: #00E0FE;
-  --blue-gray: #f4fcff; }
+  --white: $color-secundario;
+  --background: $color-quartenario;
+  --background-hover: $color-quinario;
+  --primary-blue: $color-sexagenario;
+  --blue-gray: $color-septenario; }
 
 html {
   font-size: 16px;

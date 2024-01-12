@@ -1,2 +1,27 @@
+/*! FUNCIONALIDADES */
+/*--VARIABLES de colores aplicadas en todos los documentos--*/
+
 $color-principal: #00184F;
-$color-secundario: rgb(255, 255, 255)
+$color-secundario: #ffffff;
+$color-terciario: #000000;
+$color-quartenario: #002988;
+$color-quinario: #383D4F;
+$color-sexagenario: #00E0FE;
+$color-septenario: #f4fcff;
+$color-octogenario: #357681;
+$color-nonageniario: #00000099;
+
+/*--EXTENDS flex-wrap--
+aplicada en el INDEX, MODELOS, OPERACIONES, SERVICIOS*/
+%flex-wrap {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/*--MIXIN aplicado en INDEX*/
+%flex-column{
+    display: flex;
+    flex-direction: column;
+}
