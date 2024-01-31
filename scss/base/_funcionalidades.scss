@@ -21,7 +21,7 @@ aplicada en el INDEX, MODELOS, OPERACIONES, SERVICIOS*/
 }
 
 /*--MIXIN aplicado en INDEX*/
-%flex-column{
+@mixin flex($direction) { 
     display: flex;
-    flex-direction: column;
+    flex-direction: $direction;
 }
